@@ -17,9 +17,12 @@ public class Member {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long memberId;
 
+    private String name;
     private String fcmToken;
 
-    public Member(String fcmToken) {
-        this.fcmToken = fcmToken;
+    public Member(String name) {
+        this.name = name;
+    }
+
     }
 }
